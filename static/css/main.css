@@ -1,0 +1,30 @@
+body {
+    --bg-color: #FDF8EF;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+main img {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
