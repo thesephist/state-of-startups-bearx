@@ -82,6 +82,10 @@ section.hero {
     max-width: 800px;
 }
 
+section.hero .joinButton {
+    font-size: 1.2em;
+}
+
 section.hero h1 {
     width: 50%;
     text-align: center;
@@ -287,6 +291,8 @@ section .subheader {
     text-align: center;
     margin-top: -18px;
     padding-bottom: 18px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .block-s .brick::before {
@@ -457,6 +463,8 @@ section .subheader {
     font-size: 1.2em;
     margin-top: -18px;
     padding-bottom: 18px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .block-sf {
@@ -533,6 +541,7 @@ a.joinButton {
 @media only screen and (max-width: 850px) {
     .brick-label {
         font-size: 12vw !important;
+        margin-bottom: 4px;
     }
 }
 
@@ -559,6 +568,9 @@ a.joinButton {
 
 @media only screen and (max-width: 550px) {
     /* SINGLE-COLUMN VIEW */
+    section.hero {
+        margin-top: 0;
+    }
     .block {
         flex-direction: column;
         align-items: flex-start;
@@ -601,4 +613,16 @@ a.joinButton {
     .tagline {
         font-size: 24px;
     }
+}
+
+/* REVEAL ANIMATIONS */
+.block {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: opacity .4s, transform .5s;
+}
+
+.block.hidden {
+    opacity: 0;
+    transform: translate(0, 24px) scale(.95);
 }
