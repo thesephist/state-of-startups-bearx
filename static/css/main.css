@@ -119,7 +119,7 @@ section.hero .description {
     left: 50vw;
     top: 0;
     transform: translate(-50%) rotate(-8deg);
-    margin: 10vw 0;
+    margin: 9vw 0;
 }
 
 section h1 {
@@ -625,4 +625,26 @@ a.joinButton {
 .block.hidden {
     opacity: 0;
     transform: translate(0, 24px) scale(.95);
+}
+
+@media only screen and (min-width: 1200px) {
+    /* EXTREMELY LARGE SCREENS */j
+    .line-divider {
+        margin: 100px 0;
+    }
+    .block-c .left {
+        font-size: 240px;
+    }
+    .block-j .left {
+        font-size: 76px;
+    }
+    .block-incubate {
+        font-size: 3vw;
+    }
+    .block-p .left {
+        font-size: 180px;
+    }
+    .block-q .left {
+        font-size: 50px;
+    }
 }
