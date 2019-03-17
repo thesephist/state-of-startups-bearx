@@ -628,7 +628,7 @@ a.joinButton {
 }
 
 @media only screen and (min-width: 1200px) {
-    /* EXTREMELY LARGE SCREENS */j
+    /* EXTREMELY LARGE SCREENS */
     .line-divider {
         margin: 100px 0;
     }
