@@ -30,8 +30,8 @@ a {
 }
 
 main {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
     overflow: hidden;
 }
 
@@ -47,6 +47,9 @@ header {
     align-items: center;
     max-width: 800px;
     margin: 20px auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
 }
 
 header .link a {
@@ -202,7 +205,7 @@ section .subheader {
 .block-j .left::after {
     content: '-7';
     bottom: -2vw;
-    right: -2vw;
+    right: -5vw;
 }
 
 .block-j .right {
@@ -262,6 +265,7 @@ section .subheader {
 .block-s .left {
     width: 40%;
     max-width: 330px;
+    margin-right: 20px;
 }
 
 .block-s .right {
@@ -318,7 +322,7 @@ section .subheader {
     font-size: 4.5vw;
     font-style: italic;
     color: var(--navy);
-    line-height: 5.5vw;
+    line-height: 1.2em;
     margin-bottom: 50px;
 }
 
@@ -369,7 +373,7 @@ section .subheader {
 .block-q {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-around;
     margin-bottom: 80px;
 }
@@ -460,7 +464,7 @@ section .subheader {
 }
 
 .block-sf q {
-    font-size: 5em;
+    font-size: 4.5em;
     font-style: italic;
 }
 
@@ -471,7 +475,7 @@ section .subheader {
 }
 
 footer {
-    max-width: 900px;
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -524,4 +528,77 @@ a.joinButton {
     margin-left: 20px;
     max-width: 360px;
     font-size: 1.2em;
+}
+
+@media only screen and (max-width: 850px) {
+    .brick-label {
+        font-size: 12vw !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    section.hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    section.hero h1,
+    section.hero .description {
+        width: 100%;
+        max-width: 600px;
+    }
+    section.hero h1 {
+        margin-bottom: 20px;
+    }
+    .block-sf q {
+        font-size: 8vw;
+    }
+    .tagline {
+        font-size: 8vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    /* SINGLE-COLUMN VIEW */
+    .block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .block .left,
+    .block .right {
+        width: 100%;
+    }
+
+    /* SPECIAL CASES */
+    .block-j .left,
+    .block-q .left {
+        width: auto;
+    }
+    .block-q .left {
+        margin: 20px 0;
+    }
+    .block-f .left {
+        font-size: 12vw;
+    }
+    .block-f .right {
+        padding-left: 0;
+    }
+    .joinButton {
+        font-size: 24px;
+    }
+
+    /* MONO FONT ADJUSTMENTS */
+    .block-j .left,
+    .block-j .left::before,
+    .block-j .left::after,
+    .block-q .left,
+    .block-q .left::after,
+    .block-incubate {
+        font-size: 2.2em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .tagline {
+        font-size: 24px;
+    }
 }
