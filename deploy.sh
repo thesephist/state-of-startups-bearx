@@ -1,1 +1,1 @@
-surge -p ./static/ --domain socs.surge.sh
+surge -p ./static/ --domain https://socs.surge.sh
